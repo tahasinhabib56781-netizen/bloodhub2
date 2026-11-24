@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloodHub - রক্তদাতা ডিরেক্টরি</title>
+    <meta name="description" content="বাংলাদেশের জেলা–উপজেলা মিলিয়ে ঠিকানা ও সার্চ যাচাই করার অফলাইন সহায়ক রক্তদাতা ডিরেক্টরি।" />
+    <meta property="og:title" content="BloodHub - রক্তদাতা ডিরেক্টরি" />
+    <meta property="og:description" content="বাংলাদেশের জেলা–উপজেলা মিলিয়ে ঠিকানা ও সার্চ যাচাই করার অফলাইন সহায়ক রক্তদাতা ডিরেক্টরি।" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- PWA Web App Manifest & Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#e63946" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="BloodHub" />
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {
+              console.log('[BloodHub] PWA Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('[BloodHub] PWA Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

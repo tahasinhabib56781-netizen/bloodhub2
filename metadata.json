@@ -1,0 +1,6 @@
+{
+  "name": "BloodHub - Bangladesh Blood Donor & Area Search",
+  "description": "Progressive Web App (PWA) and client-side Blood Donor Directory for Bangladesh with offline caching, area resolution, donor registration, search tokens, and variant matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

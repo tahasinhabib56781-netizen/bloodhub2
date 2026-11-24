@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>বাংলাদেশ এলাকা ও অ্যালগরিদম এক্সপ্লোরার - BloodHub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-slate-50 text-gray-800 antialiased p-6">
+  <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+    <div class="flex items-center justify-between border-b pb-4 mb-6">
+      <div>
+        <h1 class="text-2xl font-bold text-gray-900">বাংলাদেশ এলাকা ও অ্যালগরিদম এক্সপ্লোরার</h1>
+        <p class="text-sm text-gray-500">৮ বিভাগ, ৬৪ জেলা ও ৪৯৫ উপজেলার ক্যাটালগ ও লাইভ টেস্ট ইঞ্জিন</p>
+      </div>
+      <a href="/" class="text-sm px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 font-medium">← মূল পেজে ফিরে যান</a>
+    </div>
+
+    <!-- Live Resolution Testing Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- 1. Address Resolution -->
+      <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+        <h2 class="font-bold text-gray-800 mb-1">📍 find_address_location() টেস্ট</h2>
+        <p class="text-xs text-gray-500 mb-3">যেকোনো পূর্ণ ঠিকানা থেকে জেলা-উপজেলা সনাক্তকরণ</p>
+        <input id="testAddressInput" type="text" value="দক্ষিণ বুরুজ বাগান, শার্শা, যশোর" class="w-full px-3 py-2 border rounded-lg text-sm bg-white mb-3" placeholder="ঠিকানা লিখুন...">
+        <div id="addressResult" class="p-3 bg-white rounded-lg border text-xs text-gray-600">ফলাফল লোড হচ্ছে...</div>
+      </div>
+
+      <!-- 2. Search Tokens -->
+      <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+        <h2 class="font-bold text-gray-800 mb-1">🔍 search_tokens() & ভেরিয়েন্ট টেস্ট</h2>
+        <p class="text-xs text-gray-500 mb-3">বাংলা বা ইংরেজি ইনপুট থেকে ডাটাবেজ টোকেন ও সমার্থক শব্দাবলী</p>
+        <input id="testTokenInput" type="text" value="শার্শা" class="w-full px-3 py-2 border rounded-lg text-sm bg-white mb-3" placeholder="উপজেলা বা জেলা লিখুন...">
+        <div id="tokensResult" class="p-3 bg-white rounded-lg border text-xs text-gray-600">টোকেন প্রস্তুত হচ্ছে...</div>
+      </div>
+    </div>
+
+    <!-- Administrative Hierarchy Browser -->
+    <div class="border-t pt-6">
+      <h2 class="text-lg font-bold text-gray-900 mb-3">প্রশাসনিক স্তরবিন্যাস (Division / District / Upazila)</h2>
+      <div id="divisionTabs" class="flex flex-wrap gap-2 mb-4"></div>
+      <div id="districtContainer" class="space-y-3 max-h-96 overflow-y-auto pr-2"></div>
+    </div>
+  </div>
+
+  <script>
+    // ক্লায়েন্ট-সাইড এক্সপ্লোরার স্ক্রিপ্ট
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Area Explorer initialized.");
+      // ইন্টারেক্টিভ ইভেন্ট লিসেনার ও ডাইনামিক ডেটা হ্যান্ডলার
+    });
+  </script>
+</body>
+</html>

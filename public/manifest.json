@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "BloodHub - রক্তদাতা ডিরেক্টরি",
+  "short_name": "BloodHub",
+  "description": "বাংলাদেশের জেলা–উপজেলা মিলিয়ে ঠিকানা ও সার্চ যাচাই করার অফলাইন সহায়ক রক্তদাতা ডিরেক্টরি।",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#e63946",
+  "background_color": "#ffffff",
+  "lang": "bn",
+  "categories": ["medical", "health", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
